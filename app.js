@@ -9,7 +9,7 @@ const bcrypt = require('bcrypt');
 const saltRounds = 10;
 const sendEmail= require('./sendmail')
 
-const port = 800;
+const port = 8000;
 
 app.use(express.json());
 const session=require('express-session');

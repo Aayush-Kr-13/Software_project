@@ -13,7 +13,7 @@ let transporter = nodemailer.createTransport({
 let mailOptions = {
     from: config.emailUser,
     to: email,
-    subject: 'Test Email',
+    subject: 'Reset Password',
     text:`Your otp  is: ${password}`,
 };
 
