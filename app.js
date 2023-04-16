@@ -199,7 +199,6 @@ app.post('/forget', async(req, res) =>{
         return res.redirect('/forget');
       }
       else{
-
         const user = await Signup.findOne({ email: email }).exec();
         console.log(user);
         if (!user) {
