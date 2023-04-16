@@ -8,8 +8,8 @@ const bodyParser = require("body-parser");
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 const sendEmail= require('./sendmail')
-
-const port = 8000;
+const dotenv=require('dotenv').config()
+const port = process.env.PORT||3000;
 
 app.use(express.json());
 const session=require('express-session');
