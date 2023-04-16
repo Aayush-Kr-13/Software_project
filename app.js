@@ -22,9 +22,7 @@ app.use(session({
   cookie:{Maxage:60000},
   saveUninitialized: true,
 }));
-//  cookie:{Maxage:60000},
 app.use(flash());
-// console.log("wdfg");
 const mongoose = require('mongoose');
 const { request } = require("http");
 main().catch(err => console.log(err));
