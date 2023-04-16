@@ -1,41 +1,67 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     font-family: sans-serif;
 }
-
 .nav-links{
-    background-image: url(b1.jpg);
-    flex: 1;
-    text-align: right;
+    text-align: center;
+    height: 10vh;
+    width: 100%;
+    position:absolute;
+    z-index: 10;
+    background: linear-gradient(to left, rgb(110, 107, 111), rgb(193 187 204));
+    display: flex;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    box-sizing: border-box;
+    justify-content:space-between;
+    align-items: center;
 }
 
-.nav-links ul li{
+.component-list{
     list-style: none;
-    display: inline-block;
-    padding: 12px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 35%;
+    /* width: 10vw; */
     position: relative;
 }
 
-.nav-links ul li a{
-    border-radius: 10px;
+.component{
+    border-radius: 0.5rem;
     color: #000;
+    margin-left: 0.5vw;
+    height: 50%;
+    
+    padding-top: 1%;
+    text-align: center;
+    box-sizing: border-box;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
-    padding: 5px 20px;
-    border: 2px solid #000;
+    padding: 1% 3% 1% 3%;
+    font-size: 1.1vw;
+    /* padding: 3% 5% 2% 5%; */
+    border: 2px solid rgb(29, 8, 75);
     transition: 0.4s ease;
 }
-
-.nav-links ul li a:hover{
-    border-color: #10bdcd;
-    color: #7173e6;
+.component:hover {
+    border: 2px solid rgb(174, 172, 179);
 }
-
+.component:hover a{
+    color:rgb(167, 165, 171);
+}
+.component a{
+    text-decoration: none;
+    color:rgb(29, 8, 75);
+}
 .logo{
-    position: absolute;
-    top: 4px;
-    left: 15px;;
+    position: relative;
+    /* top: 1vh; */
+    left: 1vw;
+    height: 60%;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     cursor: pointer;
@@ -43,6 +69,7 @@
 
 .design{
     position: absolute;
+    top: 10vh;
     left: 30%;
     width: 70%;
     height: 67%;
@@ -107,22 +134,24 @@
 
 .image1{
     position: absolute;
-    top: 15%;
-    left: 75%;
+    top: 12%;
+    left: 65%;
 }
 
 .image2{
     position: absolute;
     left: 75%;
-    top: 73%;
+    top: 70%;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background: linear-gradient(to left, rgb(110, 107, 111), rgb(193 187 204));
+    color: rgb(29, 8, 75);
     padding: 20px;
+    font-size:1vw;
     text-align: center;
     position: absolute;
+    box-sizing: border-box;
     top: 100%;
-    width: 97.3%;
+    width:100%;
 }

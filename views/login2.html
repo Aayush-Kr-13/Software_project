@@ -16,19 +16,23 @@
             <H1><i><b>Sparks</b></i></H1>
         </div>
         <div class="component-list">
-          <div class="component"><a href="">  JOIN </a></div >
-          <div class="component"><a href="">  HOST </a></div >
-          <div class="component"><a href="">  SUBSCRIPTION</a></div >
-          <div class="component"><a href="">  ABOUT US</a></div >
+          <div class="component"><a href="/Signup">  JOIN </a></div >
+          <div class="component"><a href="/Signup">  HOST </a></div >
+          <div class="component"><a href="/Signup">  SUBSCRIPTION</a></div >
+          <div class="component"><a href="/abutus">  ABOUT US</a></div >
           </div>
     </div> 
   
+    <div class="message-container-login">
+        <% if(message.length>0){%>
+            <div class="alert-success">
+                <%= message%> 
+            </div>
+         <%}%>
+        </div>
     <div class="login-container">
-            <% if(message.length>0){%>
-                <div class="alert-success">
-                    <%= message%> 
-                </div>
-             <%}%>
+        <div class="design-1"></div>
+        
     <div class="container" id="main">
         
         <div class="sign-up" id="sign-up">
@@ -115,6 +119,9 @@
 </div>
 </div>
 </div>
+<footer class="footer-login">
+    <p>© 2023 Sparks. All rights reserved.</p>
+  </footer>
     <script type="text/javascript">
         var main =document.getElementById('main');
         console.log("yes");
