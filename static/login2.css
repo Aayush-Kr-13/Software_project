@@ -1,0 +1,448 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: rgb(183, 186, 186);
+    margin-left: 0%;
+    /* margin-left: -8%; */
+  }
+.nav-links{
+    text-align: right;
+    height: 10vh;
+    width: 100vw;
+    position: relative;
+    background: linear-gradient(to left, rgb(110, 107, 111), rgb(193 187 204));
+    display: flex;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    box-sizing: border-box;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.component-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 35%;
+    /* width: 10vw; */
+    position: relative;
+}
+
+.component{
+    border-radius: 10px;
+    color: #000;
+    margin-left: 0.5vw;
+    height: 50%;
+    
+    padding-top: 1%;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1% 3% 1% 3%;
+    font-size: 1.1vw;
+    /* padding: 3% 5% 2% 5%; */
+    border: 2px solid rgb(29, 8, 75);
+    transition: 0.4s ease;
+}
+.component:hover {
+    border-color: #000000;
+}
+.component:hover a{
+    color: #6f0798;
+    font-weight: 700;
+}
+.component a{
+    text-decoration: none;
+    font-weight: 300;
+    /* color: blue; */
+    color:rgb(29, 8, 75);
+}
+/* .nav-links ul li a:hover{
+    border-color: #10bdcd;
+    color: #7173e6;
+} */
+
+.logo{
+    position: relative;
+    /* top: 1vh; */
+    left: 1vw;
+    height: 60%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    cursor: pointer;
+}
+.login-container
+{
+    height: 80vh;
+    width: 100%;
+    top: 10vh;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(227, 226, 226);
+}
+.container
+{
+    position: absolute;
+    height: 63vh;
+    display: block;
+    left: 25vw;
+    top: 8vh;
+    width:50vw ;
+    background : white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 9px 2px rgb(228, 225, 225);
+}
+.sign-up,.sign-in
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    transition: all 0.6s ease-in-out;
+}
+.sign-up
+{
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+.sign-in{
+    width: 50%;
+    z-index: 2;
+}
+form{
+    background: white;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0% 10%;
+    text-align: center;
+}
+.det
+{
+    font-weight: bold;
+    font-size: 28px;
+    color:  rgb(29, 8, 75);
+    margin-bottom: 20px;
+}
+.det2
+{
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 20px;
+    margin: 15px 0px 20px 0px;
+}
+.enter-field
+{
+    width: 100%;
+    background-color: rgb(29, 8, 75);
+    position: relative;
+    /* left:-8%; */
+    margin: 4% 5%;
+    padding-left: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+::placeholder
+{
+    color:rgb(183, 186, 186);
+}
+input{
+    background: white;
+    background-color: rgb(29, 8, 75);
+    padding: 4% 2%;
+    width: 90%;
+    border: none;
+    outline: none;;
+}
+.inp{
+        color: rgb(142, 139, 139);
+        /* padding: 0% 5%; */
+}
+.svgs{
+    position: relative;
+    color: white;
+    height: 4%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+.forget{
+    margin-top: 12px;
+    text-decoration: none;
+}
+.forget:active
+{
+    color: blue;
+}
+.forget a
+{
+    text-decoration: none;
+    color:rgb(29, 8, 75);
+}
+img
+{
+    box-sizing: border-box;
+    object-fit: contain;
+    height: 20px;
+    width: 20px;
+}
+button{
+    color: white;
+    font-size: 12px;
+    margin: 20px;
+    
+    outline: none;
+    border-radius: 20px;
+    transition: transform 80ms ease-in-out;
+    cursor: pointer;
+}
+button:active{
+    transform: scale(0.90);
+}
+.but2{
+    background-color: transparent;
+    border: 2px solid white;
+    width: 50%;
+    height: 10%;
+    font-size: 1.4vw;
+    background:linear-gradient(to right,rgb(134, 51, 167),rgb(29, 8, 75));
+    cursor: pointer;
+}
+
+.but3{
+    cursor: pointer;
+    width: 50%;
+    height: 10%;
+    font-size: 1.4vw;
+    background:linear-gradient(to right,rgb(134, 51, 167),rgb(29, 8, 75));
+    text-align:center;
+}
+.overlay-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height:100% ;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+.overlay
+{
+    position: relative;
+    color: white;
+    background-color: burlywood;
+    background-image: url('login2.jpg');
+    background-size: cover;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition:  transform 0.6s ease-in-out;
+}
+.overlay-left, .overlay-right{
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0px 40px;
+text-align: center;
+top: 0;
+height: 100%;
+width: 50%;
+transform:translateX(0);
+transition:  transform 0.6s ease-in-out;
+}
+.overlay-left
+{
+    right: 0%;
+    transform: translateX(0);
+}
+.overlay-right{
+    transform: translateX(-20%);
+}
+.change1
+{
+    transform: translateX(100%) ;
+    opacity: 1;
+    z-index: 5;
+}
+.change2{
+    transform: translateX(100%);
+   
+}
+.change3
+{
+    transform: translateX(-100%);
+}
+.change4
+{
+    transform:translateX(50%);
+}
+.change5
+{
+    transform:translateX(0%);
+    /* animation:expand 0.6s    1; */
+}
+.change6
+{
+    transform:translateX(0%);
+    /* animation:expand 0.6s 1; */
+}
+.anim{
+    animation:expand 0.6s 1; 
+}
+@keyframes expand{
+    0%{width:50%;}
+    25%{width:60%;}
+    50%{width:70%;}
+    100%{width:50%;}
+}
+.cont1,.cont2{
+margin-bottom: 5%;
+}
+
+input:hover{
+    background:linear-gradient(to right,rgb(24, 7, 116),rgb(119, 24, 124));
+    font-size: 17px;
+    color: rgba(71, 163, 174, 0.947);
+}
+.alert{
+    position:absolute;
+    top: 11.5vh;
+    left: 43%;
+    width: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    /* padding: 0.5vw; */
+}
+.alert-success{
+    height: 38px;
+    position: absolute;
+    width: auto;
+    z-index: 10;
+    left: 44%;
+    top:3%;
+    /* top: 20vh; */
+    font-size: 26px;
+    display: inline;
+    padding: 3px;
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    background:linear-gradient(to right,rgb(24, 7, 116),rgb(119, 24, 124));
+}
+.new-button
+{
+ z-index:25;
+ position:absolute;
+width: 0%;
+top: -3%;
+display: none;
+height: 0%;
+left: 15%;
+background-color: white;
+transition: all 0.4s ease-out;
+}
+.new-button-4
+{
+ height: 80%;
+ width: 55%;
+ outline: none;
+ border: none;
+ z-index: 2;
+ background-color: white;
+}
+.new-button-5
+{
+    position: absolute;
+    left: 40%;
+ height: 80%;
+ outline: none;
+border: none;
+ width: 60%;
+ z-index: 3;
+ background-color: white;
+}
+@media screen and (max-width:1050px)
+{
+    .container{
+        height: 71vh;
+        width: 40vw;
+    }
+    .sign-in 
+    {position: absolute;
+        width:100%;
+        top: 5%;
+        z-index: 10;
+        transform: translateX(0%);
+        transition: all 0.4s ease-out
+    }
+    .sign-up
+    {
+        position: absolute;
+        left:0%;
+        width:100%;
+        height: 95%;
+        transform: translateX(0%);
+        top: 5%;
+        z-index: 11;
+        transition: all 0.4s ease-out
+        }
+    .but2
+    {
+        position: relative;
+        top: 0%;
+        z-index: 20;
+    }
+    .overlay-container
+    {
+        /* display: none; */
+        opacity: 0;
+    }
+    .new-button{
+        width: 60%;
+        height: 10%;
+        
+        display:flex;
+    }
+    .new-button-4
+    {
+        background:linear-gradient(to right,rgb(134, 51, 167),rgb(29, 8, 75));
+    }
+    .new-button-5{
+        background:linear-gradient(to right,rgb(134, 51, 167),rgb(29, 8, 75));
+}}
+@media screen and (max-width:450px)
+{    .container
+    {
+        width: 90vw;
+    }
+    }

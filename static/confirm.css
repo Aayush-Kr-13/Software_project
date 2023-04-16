@@ -1,0 +1,42 @@
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.alert-success{
+    /* width: 20%; */
+    position: absolute;
+    top: 12vh;
+    padding: 10px;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background:linear-gradient(to right,rgb(24, 7, 116),rgb(119, 24, 124));
+    border-radius: 5rem;
+    color: white;
+    background-color: #fafafaa3;
+    margin: 5px 9px;
+  }
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}

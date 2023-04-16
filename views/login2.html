@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/login2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Document</title>
+</head>
+<body>
+     <div class="nav-links">
+        <div class="logo">
+            <H1><i><b>Sparks</b></i></H1>
+        </div>
+        <div class="component-list">
+          <div class="component"><a href="">  JOIN </a></div >
+          <div class="component"><a href="">  HOST </a></div >
+          <div class="component"><a href="">  SUBSCRIPTION</a></div >
+          <div class="component"><a href="">  ABOUT US</a></div >
+          </div>
+    </div> 
+  
+    <div class="login-container">
+            <% if(message.length>0){%>
+                <div class="alert-success">
+                    <%= message%> 
+                </div>
+             <%}%>
+    <div class="container" id="main">
+        
+        <div class="sign-up" id="sign-up">
+            <form action="/signup" method="post">
+                <div class="det">Create Account</div>
+                <div class="svgs">
+                    <div class="svg1"><img src = "facebook.svg" alt="My Happy SVG"/></div>
+                    <div class="svg1"><img src = "twitter.svg" alt="My Happy SVG"/></div>
+                </div>
+                <div class="det2">
+                    or use email for registeration
+                </div>
+                <div class="enter-field">
+                    <span class="material-symbols-outlined">
+                        badge
+                        </span>
+                <input  class="inp" type="text" value="" placeholder="Name" name="name">
+              </div>
+              <div class="enter-field">
+                <span class="material-symbols-outlined">
+                    mail
+                    </span>
+                <input   class="inp" type="email" value="" placeholder="Enter email" name ="email">
+                </div>
+                <div class="enter-field">
+                    <span class="material-symbols-outlined">
+                        lock
+                        </span>
+                <input  class="inp" type="Password" value="" placeholder="Enter Password" name="Password">
+                </div>
+                <button  class="but3" type="submit" >Sign Up</button>
+            </form>
+        </div>
+        <div class="sign-in" id="sign-in">
+            <form  action="/login" method="post">
+                <div class="det">Sign in to the Spark</div>
+                <div class="svgs">
+                    <div class="svg1"><img src = "facebook.svg" alt="My Happy SVG"/></div>
+                    <div class="svg1"><img src = "twitter.svg" alt="My Happy SVG"/></div>
+                </div>
+                <div class="det2">
+                    or use email for your account
+                    
+                </div>
+                <div class="enter-field">
+                    <span class="material-symbols-outlined">
+                        mail
+                        </span>
+                    <input   class="inp" type="email" value="" placeholder="Enter email" name ="email">
+                    </div>
+                    <div class="enter-field">
+                        <span class="material-symbols-outlined">
+                            lock
+                            </span>
+                    <input  class="inp" type="Password" value="" placeholder="Enter Password" name="Password">
+                    </div>
+                <div class="forget"><a href="/forget">Forget password?</a></div>
+                <!-- <div class="inp"> -->
+                <button class="but3"  type="submit" >Sign In</button>
+                
+            </form>
+           
+        </div>
+        
+         <div class="overlay-container" id="overlay-container">
+         <div class="overlay" id="overlay"> 
+            <div class="overlay-left" id="overlay-left">
+                <div class="cont1">New Here?</div>
+            <div class="cont2">Sign Up and discover a great amount of new opportunites</div>
+             <button class="but2"  id="SignIn" onclick="addi()" >Sign Up</button>
+            </div>
+        <div class="overlay-right" id="overlay-right">
+            
+             <div class="cont1">Welcome Back!</div>
+                <div class="cont2">To keep Connected with us please login with your personal details</div>
+                <button class="but2" id="SignUp" onclick="removi()">Sign In</button> 
+        </div>
+        
+    </div>
+</div>
+<div class="new-button">
+    <button class="new-button-4"  onclick="addi()" >Sign Up</button>
+    <button class="new-button-5" onclick="removi()">Sign In</button>
+</div>
+</div>
+</div>
+    <script type="text/javascript">
+        var main =document.getElementById('main');
+        console.log("yes");
+        function  addi()
+       { 
+        var Button2 =document.getElementById('sign-up');
+        var Button3 =document.getElementById('sign-in');
+        var Button4 =document.getElementById('overlay-container');
+        var Button5 =document.getElementById('overlay');
+        var Button6 =document.getElementById('overlay-left');
+        var Button7 =document.getElementById('overlay-right');
+        console.log("yes1");
+            Button2.classList.add("change1");
+            console.log("yes2");
+            Button3.classList.add("change2");
+            console.log("yes3");
+            Button4.classList.add("change3");
+            
+            console.log("yes4");
+            Button5.classList.add("change4");
+            console.log("yes5");
+            Button6.classList.add("change5");
+            console.log("yes6");
+            Button7.classList.add("change6");
+            console.log("yes7");
+        }
+       function  removi()
+{
+    var Button2 =document.getElementById('sign-up');
+        var Button3 =document.getElementById('sign-in');
+        var Button4 =document.getElementById('overlay-container');
+        var Button5 =document.getElementById('overlay');
+        var Button6 =document.getElementById('overlay-left');
+        var Button7 =document.getElementById('overlay-right');
+        
+            Button2.classList.remove("change1");
+            Button3.classList.remove("change2");
+            Button4.classList.remove("change3");
+            Button5.classList.remove("change4");
+            // Button6.classList.remove("change5");
+            // Button7.classList.remove("change6");
+  }
+        </script>
+
+
+</body>
+</html>

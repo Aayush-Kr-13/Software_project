@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/forget.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="nav-links">
+        <div class="logo">
+            <H1><i><b>Sparks</b></i></H1>
+        </div>
+        <div class="component-list">
+          <div class="component"><a href="">  JOIN </a></div >
+          <div class="component"><a href="">  HOST </a></div >
+          <div class="component"><a href="/Signup">  LOG IN / REGISTER</a></div >
+          <div class="component"><a href="">  ABOUT US</a></div >
+          </div>
+    </div> 
+    <div class="meassage-container">
+    <% if(message.length>0){%>
+        <div class="alert-success">
+            <%= message%>
+        </div>
+     <%}%>
+    </div>
+    <div class="forget-container">
+    <div class="main-forget">
+       
+        <div class="forget-div">
+            <div class="forget-description">Change Password</div>
+            <form class="forget-form" action="/forget" method="post">
+                <div class="Enter-email">
+                    <span class="material-symbols-outlined">
+                        mail
+                        </span>
+                    <input type="email"  placeholder="Enter email" name="Email">
+                </div>
+                <div class="Enter-email">
+                    <span class="material-symbols-outlined">
+                        lock
+                        </span>
+                    <input type="text" placeholder="New Password" name="NewPassword">
+                </div>
+                <div class="Enter-email">
+                    <span class="material-symbols-outlined">
+                        lock_reset
+                        </span>
+                    <input type="text" placeholder="Confirm Password" name="ConfirmPassword">
+                </div>
+                <button class="forget-button" type="submit">Next</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

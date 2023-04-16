@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/meeting.css">
+    <script src="api.js"></script>
+    <title>Meeting Interface</title>
+</head>
+<body>
+    <div class="nav-links">
+        <ul>
+          <li><a href="meeting.html">  HOST </a></li>
+          <li><a href="subscription.html">  SUBSCRIPTION </a></li>
+          <li><a href="">  ABOUT US</a></li>
+          <li><a href="main.html">  Log Out </a></li>
+        </ul>
+    </div> 
+    <div class="logo">
+        <a href="home.html"><H1><i><b>Sparks</b></i></H1></a>
+    </div>
+    <div class="button">
+    <button class="btn" id="start" type="start">Create Meeting</button>
+    </div>
+    <div class="image1">
+        <img src="d1.jpg">
+    </div>
+    <div class="image2">
+        <img src="d3.jfif">
+    </div>
+    <div class = "container" id="jitsi-container">
+        <div class = "box">
+            <div class="Logo">
+                <H1><i><b>Sparks</b></i></H1>
+            </div>
+        </div>
+    </div>
+    <script>
+        var button = document.querySelector('#start');
+        var container = document.querySelector('#jitsi-container');
+        var api = null;
+
+        button.addEventListener('click', () => {
+            var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            var stringLength = 30;
+            function pickRandom () {
+                return possible[Math.floor() * possible.length];
+            }
+            var randomString = Array.apply(null,Array(stringLength)).map (pickRandom).join('');
+
+            var domain = "meet.jit.si";
+            var options = {
+                "roomName": randomString,
+                "parentNode": container,
+                "width": 700,
+                "height": 600,
+            };
+            api = new JitsiMeetExternalAPI(domain, options);
+            });
+    </script>
+    <footer>
+        <p>© 2023 Sparks. All rights reserved.</p>
+    </footer>
+</body>
+</html>

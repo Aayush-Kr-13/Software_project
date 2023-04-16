@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Centered Form Example</title>
+      <link rel="stylesheet" href="../static/confirm.css">
+</head>
+<body>
+    <% if(message.length>0){%>
+        <div class="alert-success">
+            <%= message%>
+        </div>
+     <%}%>
+	<form action="/confirm" method="post">
+		<input type="password" id="password" name="otp" placeholder="Enter your OTP">
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>
