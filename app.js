@@ -73,6 +73,17 @@ app.get('/confirm', (req, res) => {
   res.status(200).render('confirm.html',{message: req.flash('message')});
 })
 
+app.get('/subscription', (req, res) => {
+  const param = {}
+  res.status(200).render('subscription.html',{message: req.flash('message')});
+})
+
+app.get('/abtus', (req, res) => {
+  const param = {}
+  res.status(200).render('abtus.html',{message: req.flash('message')});
+})
+
+
 app.get('/home', (req, res) => {
   // const param = {}
   res.status(200).render('home.html');
