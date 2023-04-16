@@ -25,7 +25,7 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    width: 35%;
+    width: 25%;
     /* width: 10vw; */
     position: relative;
 }
@@ -48,16 +48,15 @@
     transition: 0.4s ease;
 }
 .component:hover {
-    border: 2px solid rgb(174, 172, 179);
+  border: 2px solid rgb(38, 4, 122);
+  font-weight: 900;
 }
 .component:hover a{
-    color:rgb(167, 165, 171);
-    /* border: 2px solid rgb(27, 120, 120); */
+  color:rgb(86, 0, 120);
 }
 .component a{
-    text-decoration: none;
-    /* color: blue; */
-    color:rgb(29, 8, 75);
+  text-decoration: none;
+  color:rgb(29, 8, 75);
 }
 /* .nav-links ul li a:hover{
     border-color: #10bdcd;
