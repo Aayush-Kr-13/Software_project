@@ -83,6 +83,11 @@ app.get('/abtus', (req, res) => {
   res.status(200).render('abtus.html',{message: req.flash('message')});
 })
 
+app.get('/main', (req, res) => {
+  const param = {}
+  res.status(200).render('main.html',{message: req.flash('message')});
+})
+
 
 app.get('/home', (req, res) => {
   // const param = {}
