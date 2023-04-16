@@ -30,7 +30,7 @@ const { request } = require("http");
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/RegisterSchema');
+  await mongoose.connect('mongodb+srv://aayush_1302:aayush1302@cluster0.qeurofq.mongodb.net/RegisterSchema?retryWrites=true&w=majority');
   console.log("connected");
 }
 
@@ -200,7 +200,8 @@ app.post('/forget', async(req, res) =>{
       }
       else{
 
-        const user = await Signup.findOne({ email: email });
+        const user = await Signup.findOne({ email: email }).exec();
+        console.log(user);
         if (!user) {
           req.flash('message', 'This email is not registered. Please try using your registered email.');
           return res.redirect('/forget');
