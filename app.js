@@ -28,7 +28,7 @@ const { request } = require("http");
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb+srv://aayush_1302:aayush1302@cluster0.qeurofq.mongodb.net/RegisterSchema?retryWrites=true&w=majority');
+  await mongoose.connect('mongodb+srv://aayush_1302:<Password>@cluster0.qeurofq.mongodb.net/RegisterSchema?retryWrites=true&w=majority');
   console.log("connected");
 }
 
